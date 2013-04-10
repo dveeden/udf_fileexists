@@ -4,6 +4,8 @@ An MySQL UDF which can be used to test if a file exists. This can be used to ver
 
 It returns 1 if the file exists and 0 if the file is missing.
 
+This is only a proof of concept.
+
 Installation
 ============
 $ gcc -o udf_fileexists.so udf_fileexists.c `mysql_config --include` -shared -fPIC
