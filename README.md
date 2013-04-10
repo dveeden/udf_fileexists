@@ -8,9 +8,10 @@ This is only a proof of concept.
 
 Installation
 ============
-$ gcc -o udf_fileexists.so udf_fileexists.c `mysql_config --include` -shared -fPIC
 
-mysql> CREATE FUNCTION udf_fileexists RETURNS INTEGER SONAME 'udf_fileexists.so';
+    $ gcc -o udf_fileexists.so udf_fileexists.c `mysql_config --include` -shared -fPIC
+
+    mysql> CREATE FUNCTION udf_fileexists RETURNS INTEGER SONAME 'udf_fileexists.so';
 
 Example
 =======
